@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sensor_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.oscar.projekt1.SensorDetailActivity">
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRun"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tvVendor"
+        android:layout_toEndOf="@+id/tvVendor" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPower"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/tvMaxRange"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMaxRange"
+        android:layout_below="@+id/tvVersion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVersion"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvMinDelay"
+        android:layout_below="@+id/tvType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRes"
+        android:layout_below="@+id/tvMinDelay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVendor"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/tvRes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tvType"
+        android:layout_below="@+id/tvPower"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvXAxis"
+        android:layout_alignRight="@+id/tvXAxis"
+        android:layout_alignEnd="@+id/tvXAxis"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvYAxis" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvYAxis"
+        android:layout_alignLeft="@+id/tvYAxis"
+        android:layout_alignStart="@+id/tvYAxis"
+        android:layout_marginTop="27dp"
+        android:id="@+id/tvZAxis" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvXAxis"
+        android:layout_toRightOf="@+id/btnRun"
+        android:layout_toEndOf="@+id/btnRun"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:id="@+id/tvXIron" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvZAxis"
+        android:layout_alignRight="@+id/tvXIron"
+        android:layout_alignEnd="@+id/tvXIron"
+        android:id="@+id/tvYIron" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvZAxis"
+        android:layout_alignRight="@+id/tvYIron"
+        android:layout_alignEnd="@+id/tvYIron"
+        android:id="@+id/tvZIron" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tvXAxis"
+        android:layout_below="@+id/tvVendor"
+        android:layout_toRightOf="@+id/tvVendor"
+        android:layout_toEndOf="@+id/tvVendor" />
+
+    <TextView
+        android:text="Timestamp:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvPower"
+        android:layout_alignLeft="@+id/tvXIron"
+        android:layout_alignStart="@+id/tvXIron"
+        android:id="@+id/tvTimeStamp" />
+
+    <TextView
+        android:text="Accuracy:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAcc"
+        android:layout_alignBaseline="@+id/tvVersion"
+        android:layout_alignBottom="@+id/tvVersion"
+        android:layout_alignLeft="@+id/tvTimeStamp"
+        android:layout_alignStart="@+id/tvTimeStamp" />
+
+</RelativeLayout>

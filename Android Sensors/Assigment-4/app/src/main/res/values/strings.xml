@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="cancel">Cancel</string>
+    <string name="fingerprintdialog">Put your finger on sensor</string>
+</resources>

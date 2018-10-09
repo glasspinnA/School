@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="lblValue">Values: </string>
+    <string name="lblTime">Time: </string>
+    <string name="lblAcc">Acc: </string>
+</resources>
