@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Getaway login</title>
+        
+        <meta charset="utf-8">
+        <link href="../static/css/login.css" rel="stylesheet" type="text/css">
+		
+    </head>
+    
+    <body>
+        
+        <header>
+            <div id= "title">
+                <p class="logo-start"><a href="/">Getaway</a></p>
+            </div>
+        </header>
+        
+        <section>
+            <div id="login">
+                <form action="" method="post">
+                    <input type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+                    <input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+                    <input class="btn btn-default" type="submit" value="Login">
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <ul class=flashes>
+                        {% for message in messages %}
+                        <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% endwith %}
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

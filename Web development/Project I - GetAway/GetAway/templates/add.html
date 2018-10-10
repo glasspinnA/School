@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        
+        <title>Getaway</title>
+        <meta charset="utf-8">
+        
+        <!-- CSS -->
+        <link href="../static/css/add.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+        <script src="../static/js/jquery-1.11.2.js"></script>
+        <script src="../static/js/jquery.ui.widget.js"></script>
+        <script src="../static/js/jquery.fileupload.js" type="text/javascript"></script>
+        <script src="../static/js/jquery.fileupload-process.js" type="text/javascript"></script>
+        <script src="../static/js/jquery.fileupload-ui.js" type="text/javascript"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../static/js/multi-select.js"></script>
+        <script src="../static/js/add.js"></script>
+        
+</head>
+    
+    
+<body id="bodyAdd">
+    <header>
+        <h3 id="logotyp"><a class="logo-start" href="/">Getaway</a></h3>
+    </header>
+   <nav>
+        <ul id="nav">
+            <li>
+                <a href="/admin" class="a-link up"><div class="nav"><img src="../static/pictures/location.png" alt="location" id="location"><p>All locations</p></div></a>
+            </li>
+            <li id="liAdd">
+                <a href="/add" class="a-link"><div class="nav"><img src="../static/pictures/add_location.png" alt="location" id="addLocation"><p>Add location</p></div></a>
+            </li>
+            <li>
+                <a href="/changePassword" class="a-link"><div class="nav"><img src="../static/pictures/admin.png" alt="location" id="admin"><p>Admin settings</p></div></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <content>
+        <form action="/addDestination" method="post">
+<div class="content">
+    
+        <!-- Text input-->
+        <div class="left-group">
+            <label for="txtTitle" class="labels">City</label> <input class=
+            "form-control input-md" id="txtTitle" name="inputTitle"
+            placeholder="ex. Malmö" required="required" type="text">
+        </div>
+        
+        
+        <div class="left-group">
+            <label for="country" class="labels">Country</label> <input class=
+            "form-control input-md" id="country" name="inputCountry"
+            placeholder="ex. Sverige" required="required" type="text">
+        </div>
+        
+        
+        <!-- Textarea -->
+        <div class="left-group">
+            <label for="txtPost" class="labels">Description</label> 
+            <textarea class="form-control" id="txtPost" name="inputDescription"
+            placeholder="Text" required="required"></textarea>
+        </div>
+        
+        </div>
+    
+
+<div class="content">   
+    
+    
+        <div class="criteria-group">
+            <label for="txtPost" class="labels">Tags</label><br>
+            <select class="lstFruits" id="lstFruits" multiple="multiple" name="inputTag">
+                <option value="a city">a city</option>
+                <option value="the wilderness">the wilderness</option>
+                <option value="the beach">the beach</option>
+                <option value="the nightlife">the nightlife</option>
+                <option value="the snow">the snow</option>
+            </select>
+        </div>
+    
+    
+        <div class="criteria-group">
+            <label for="txtPost" class="labels">Continent</label><br>
+            <select class="lstFruits" multiple="multiple" name="inputTag">
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    
+    
+    
+        <div class="criteria-group">
+            <label for="txtPost" class="labels">Month</label><br>
+            <select class="lstFruits" multiple="multiple" name="inputTag">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+        </div>
+    
+        <div class="right-group">
+            <label for="txtPost" class="labels">Image</label><br>
+            <span id="browse" class="btn btn-default btn-file">
+                Browse... <input type="file" id="fileupload" name="file">
+            </span>
+        </div>
+    
+    
+        <div class="right-group" id="viewImage">
+            <img id="imgUpload" class="img-thumbnail">
+            <input type="hidden" name="filePath" id="filePath">
+        </div>
+    
+</div>            
+            
+       <!-- Button -->
+        <div class="form-group">
+            <hr>
+            <!--<p class="text-center"><input id="buttons" class="btn btn-primary" id=
+            "singlebutton" name="singlebutton" type="submit" value=
+            "Save"></p>-->
+            
+            <p class="text-center"><input id="buttons" class="btn btn-primary" id=
+            "singlebutton" name="singlebutton" type="submit" value=
+            "Publish"></p>
+        </div>
+    </form>
+        
+        </content>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'Pacifico';
+	src: url('fonts/Pacifico.ttf')
+}
+
+
+html { 
+  background: url(../pictures/adminpic.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title p {
+	font-size: 40px;
+	font-family: 'Pacifico', san-serif;
+	color: white;
+	margin-left: 50px;
+}
+
+.logo-start a {
+    color: white; 
+    text-decoration: none;
+}
+
+#login {
+	display: block;
+	width: 260px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 160px;
+}
+
+#login input {
+	margin-top: 1em;
+	text-align: center;
+	padding-top: 1em;
+    padding-bottom: 1em;
+	width: 260px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 15px;
+	border: 0px;
+}
+
+#login input:hover {
+    cursor: pointer;
+    background: white !important;
+    color: #666 !important;
+    border-color: #fff !important;
+    transition: ease-in 0.25s;
+}
+
+#login input[type=text] {
+	background: white;
+	
+}
+
+#login input[type=password] {
+	background: white;
+	
+}
+
+#login input[type=submit] {
+	color: white;
+	background: transparent;
+	width: 260px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+	border: 3px solid;
+}
+
+.flashes {
+    color: #FFF;
+    padding: 0px;
+    font-family: 'helvetica';
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #999;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+    -webkit-text-fill-color: #999;
+}

@@ -1,0 +1,51 @@
+html { 
+  background: url(../pictures/giphy.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#box {
+	display: block;
+	color: yellow;
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	font-family: 'Helvetica', sans-serif;
+}
+    
+#box h1 {
+	font-size: 70px;
+}
+
+#box p {
+	font-size: 25px;
+    margin-bottom: 2em;
+}
+
+.cool-link {
+    text-align: center;
+	padding: 10px 4em 10px 4em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 3px solid yellow;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
+    background: yellow;
+    text-decoration: none;
+    width: 200px;
+}
+
+.cool-link:hover {
+    cursor: pointer;
+    background: transparent;
+    color: yellow;
+    transition: ease-in 0.3s;
+}
